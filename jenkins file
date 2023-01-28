@@ -1,5 +1,4 @@
 
-
  pipeline{
     agent any
     }
@@ -17,4 +16,4 @@
          }       
     }
 }
-}
+
