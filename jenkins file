@@ -1,7 +1,5 @@
-
- pipeline{
+pipeline{
     agent any
-    }
     stages{
       		 stage('GetCode'){
             		steps{
@@ -13,7 +11,9 @@
 			def mvnHome = tool name: 'maven-3.8.7', type: 'maven'
                 		sh "${mvnHome}/bin/mvn package"
             }
-         }       
+         } 
+	 
     }
+    
 }
 
